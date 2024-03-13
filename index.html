@@ -4,6 +4,28 @@
     <meta charset="utf-8" />
     <title>font-family-test</title>
     <style>
+      h1 {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      caption {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 140px 1fr 2fr;
+        gap: 20px;
+        align-items: start;
+      }
+      @media screen and (max-width: 800px) {
+        section {
+          display:block;
+        }
+      }
       pre {
         background-color: lightgray;
         padding: 1em;
@@ -68,7 +90,7 @@
   </head>
   <body>
     <h1>font-family-test</h1>
-    <p><a href="https://www.similarweb.com/ja/top-websites/japan/" target="_blank">simliarweb</a> を参考に日本人がよく見るサイトのベース font-family の調査</p>
+    <caption><a href="https://www.similarweb.com/ja/top-websites/japan/" target="_blank">simliarweb</a> を参考に日本人がよく見るサイトのベース font-family の調査</caption>
     <section>
       <h2>Google</h2>
       <pre>font-family: arial,sans-serif;</pre>
